@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (2/2) · kr-pbn-bp-010</title>
+  <meta name="description" content="kr-pbn-bp-010에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://busan-web-marketing.pbn-builder.xyz/posts-2.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* CSS RESET & VARIABLES */
+ :root {
+ --color-bg: #0a0a0a;
+ --color-text: #f0f0f0;
+ --color-accent: #ccff00;
+ --color-accent-hover: #b3e600;
+ --color-border: #333333;
+ --color-secondary: #888888;
+ --font-main: 'Helvetica Neue', Arial, sans-serif;
+ --spacing-unit: 1rem;
+ --container-width: 1200px;
+ --border-width: 2px;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ background-color: var(--color-bg);
+ color: var(--color-text);
+ font-family: var(--font-main);
+ line-height: 1.6;
+ overflow-x: hidden;
+ }
+
+ /* TYPOGRAPHY */
+ h1, h2, h3, h4 {
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: -0.02em;
+ line-height: 1.1;
+ margin-bottom: 1.5rem;
+ }
+
+ h1 {
+ font-size: clamp(2.5rem, 5vw, 5rem);
+ color: var(--color-text);
+ }
+
+ h2 {
+ font-size: clamp(1.8rem, 3vw, 3rem);
+ border-bottom: var(--border-width) solid var(--color-accent);
+ display: inline-block;
+ padding-bottom: 0.5rem;
+ }
+
+ h3 {
+ font-size: 1.5rem;
+ color: var(--color-accent);
+ }
+
+ p, li, a {
+ font-size: 1.1rem;
+ color: var(--color-secondary);
+ }
+
+ a {
+ color: var(--color-text);
+ text-decoration: none;
+ transition: color 0.3s ease;
+ }
+
+ a:hover {
+ color: var(--color-accent);
+ }
+
+ /* UTILITIES */
+ .container {
+ max-width: var(--container-width);
+ margin: 0 auto;
+ padding: 0 var(--spacing-unit);
+ }
+
+ .section-padding {
+ padding: 5rem 0;
+ }
+
+ .grid-2 {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 2rem;
+ }
+
+ .grid-3 {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 2rem;
+ }
+
+ .text-accent {
+ color: var(--color-accent);
+ }
+
+ .border-box {
+ border: var(--border-width) solid var(--color-border);
+ padding: 2rem;
+ transition: transform 0.2s ease, border-color 0.2s ease;
+ }
+
+ .border-box:hover {
+ border-color: var(--color-accent);
+ transform: translateY(-5px);
+ }
+
+ .btn {
+ display: inline-block;
+ background-color: var(--color-accent);
+ color: var(--color-bg);
+ padding: 1rem 2rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ border: none;
+ cursor: pointer;
+ font-size: 1rem;
+ text-decoration: none;
+ transition: background-color 0.3s ease;
+ }
+
+ .btn:hover {
+ background-color: var(--color-accent-hover);
+ }
+
+ .btn:active {
+ transform: scale(0.98);
+ }
+
+ /* HEADER & NAV */
+ header {
+ border-bottom: var(--border-width) solid var(--color-border);
+ padding: 1.5rem 0;
+ position: sticky;
+ top: 0;
+ background-color: var(--color-bg);
+ z-index: 1000;
+ }
+
+ .nav-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-size: 1.5rem;
+ font-weight: 900;
+ color: var(--color-accent);
+ letter-spacing: -0.05em;
+ }
+
+ nav ul {
+ display: none;
+ list-style: none;
+ gap: 2rem;
+ }
+
+ nav ul li a {
+ font-weight: 600;
+ text-transform: uppercase;
+ font-size: 0.9rem;
+ }
+
+ .tel-link {
+ font-weight: 700;
+ color: var(--color-accent);
+ border: 1px solid var(--color-accent);
+ padding: 0.5rem 1rem;
+ text-transform: uppercase;
+ font-size: 0.9rem;
+ }
+
+ .hamburger {
+ display: block;
+ cursor: pointer;
+ width: 30px;
+ height: 20px;
+ position: relative;
+ }
+
+ .hamburger span {
+ display: block;
+ width: 100%;
+ height: 3px;
+ background-color: var(--color-text);
+ position: absolute;
+ transition: all 0.3s ease;
+ }
+
+ .hamburger span:nth-child(1) { top: 0; }
+ .hamburger span:nth-child(2) { top: 8px; }
+ .hamburger span:nth-child(3) { top: 16px; }
+
+ /* RESPONSIVE */
+ @media (min-width: 768px) {
+ .grid-2 {
+ grid-template-columns: 1fr 1fr;
+ }
+ .grid-3 {
+ grid-template-columns: repeat(3, 1fr);
+ }
+ 
+ nav ul {
+ display: flex;
+ }
+
+ .hamburger {
+ display: none;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (2/2) · kr-pbn-bp-010">
+  <meta property="og:description" content="kr-pbn-bp-010에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://busan-web-marketing.pbn-builder.xyz/posts-2.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container nav-container">
+ <div class="logo">KR-BP-BUSAN</div>
+ <nav>
+ <ul>
+ <li><a href="#">Main</a></li>
+ <li><a href="#">Strategy</a></li>
+ <li><a href="#">Data</a></li>
+ <li><a href="#">Contact</a></li>
+ </ul>
+ </nav>
+ 
+ <div class="hamburger" onclick="alert('모바일 메뉴는 개발 중입니다.')">
+ 
+ 
+ 
+ </div>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 31개 · 2/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0485.html">부산 백링크 대행 마케팅 전략으로 알아보는 공덕 셔츠룸 추천정보 탐색법</a>
+        <p class="post-item__summary">디지털 환경에서 특정 업체의 신뢰도를 파악하는 과정은 부산 백링크 대행 마케팅 분석 기법과 매우 유사합니다. 온라인상에 산재한 정보를 체계적으로 필터링하여 옥석을 가려내는 방식은 비즈니스 선택의 오</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0486.html">부산 백링크 대행 마케팅 시각에서 본 연남 유흥 추천정보 가격 판단 기준</a>
+        <p class="post-item__summary">부산 백링크 대행 마케팅을 진행하며 얻은 데이터 분석 역량은 오프라인 서비스의 가치를 평가하는 데도 큰 도움을 줍니다. 연남 지역에서 유흥을 즐기고자 할 때, 소비자들은 흔히 가격 중심의 저렴한 옵</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0487.html">부산 백링크 대행 마케팅 실패 사례로 보는 마곡 가라오케 추천정보 예약 과정</a>
+        <p class="post-item__summary">온라인 홍보 전략 중 부산 백링크 대행 마케팅 분야에서 가장 자주 발생하는 실패는 무계획한 접근입니다. 검색 엔진의 알고리즘을 무시하고 무작정 링크를 생성하는 것은 장기적으로 신뢰도를 떨어뜨리는 원</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0488.html">부산 백링크 대행 마케팅 관점에서 정리한 마곡 유흥 추천정보 접근 체크리스트</a>
+        <p class="post-item__summary">부산 백링크 대행 마케팅을 수행할 때 위치 최적화는 검색 순위의 성패를 가르는 핵심적인 요소입니다. 타겟 유저가 검색하기 좋은 지점에 콘텐츠를 배치하는 것처럼, 마곡 지역에서 유흥을 즐기고자 할 때</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0489.html">부산 백링크 대행 마케팅 전략으로 알아본 합정 노래방 추천정보 안내</a>
+        <p class="post-item__summary">지인들과 저녁 식사를 마친 뒤 흥겨운 분위기를 이어가기 위해 노래방을 찾는 경우가 많습니다. 처음 방문하는 지역에서 만족스러운 업소를 찾기란 생각보다 어려운 일이며, 온라인상의 홍보성 문구에만 의존</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0490.html">부산 백링크 대행 마케팅 활용과 연남 클럽 추천정보 선택 기준</a>
+        <p class="post-item__summary">흔히 연남동 일대 클럽은 무조건 자정이 넘어야 활기가 넘친다고 오해하는 경우가 많습니다. 하지만 실제로는 이른 시간부터 분위기가 조성되는 곳들이 있으며, 각 장소마다 추구하는 음악적 색깔이나 연령층</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0491.html">부산 백링크 대행 마케팅 지식과 합정 셔츠룸 추천정보 핵심 요약</a>
+        <p class="post-item__summary">셔츠룸을 방문하기 위해 필요한 충족 조건은 적절한 인원 구성, 충분한 예산 확보, 그리고 신뢰할 수 있는 업소 선택입니다. 단순히 호기심으로 방문하기보다는 함께하는 동행인들과의 목적을 명확히 하는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0492.html">부산 백링크 대행 마케팅 관점으로 본 공덕 가라오케 추천정보 가이드</a>
+        <p class="post-item__summary">혹시 공덕 지역에서 회식이나 모임 장소를 찾으면서 어떤 가라오케가 정말 괜찮을지 고민하고 계신가요? 너무나 많은 업체들 사이에서 고민하다 보면 정작 중요한 판단 기준을 놓치기 일쑤입니다. 요즘 유행</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0493.html">부산 백링크 대행 마케팅 전략으로 알아보는 상수 마사지 추천정보 활용법</a>
+        <p class="post-item__summary">온라인 마케팅에서 흔히 다루는 부산 백링크 대행 마케팅 기법처럼 정보의 신뢰도를 파악하는 작업은 마사지 샵을 고를 때도 필수적입니다. 무작정 방문하기보다는 단계적인 확인 절차를 거치는 것이 시행착오</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0494.html">부산 백링크 대행 마케팅 관점에서 본 망원 노래방 추천정보 가격 비교</a>
+        <p class="post-item__summary">검색 결과의 가치를 판단하는 부산 백링크 대행 마케팅 원리처럼 노래방을 선택할 때도 가격과 서비스의 상관관계를 면밀히 대조해야 합니다. 망원 지역에서 즐거운 시간을 보내기 위해서는 저렴한 시간제 업</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0495.html">부산 백링크 대행 마케팅 분석이 짚어주는 홍대 노래방 추천정보 실패 사례</a>
+        <p class="post-item__summary">마케팅 효과를 노리는 부산 백링크 대행 마케팅 전략이 잘못된 경로를 타면 성과가 없는 것처럼, 노래방 예약 역시 초기 접근 방식이 어긋나면 헛걸음하기 쉽습니다. 홍대 지역은 워낙 유동 인구가 많아 </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <span class="pager__current">2</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
